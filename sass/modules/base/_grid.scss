@@ -1,0 +1,156 @@
+.wrapper{
+
+	.wrapper__inner{
+
+		width: 100%;
+
+		max-width: 960px;
+
+		margin: 0 auto;
+
+		&.wrapper_inner--wide{
+
+			max-width: 1200px;
+
+		}
+
+	}
+
+}
+
+// START 12TH COLUMN GRID
+.grid{
+
+	.grid__inner {
+
+		margin: 0 -15px;
+
+		@media #{$break-tablets, $break-smartphones, $break-phones}{
+
+			margin: 0;
+
+		}
+
+		.grid__item {
+
+			padding: 0 15px;
+
+			float: left;
+
+			&.pull-left{
+
+				float: left;
+
+			}
+
+			&.pull-right{
+
+				float: right;
+
+			}
+
+			&.one--half{
+
+				width: 50%;
+
+				&.one--half--mobile{
+
+					@media #{$break-tablets, $break-smartphones, $break-phones}{
+
+						width: 50%;
+
+					}
+
+				}
+
+				@media #{$break-tablets, $break-smartphones, $break-phones}{
+
+					width: 100%;
+
+				}
+
+			}
+
+			&.one--forth{
+
+				width: 25%;
+
+			}
+
+			&.one--third{
+
+				width: 33.33%;
+
+			}
+
+			&.one--seventh{
+
+				width: 77.77%;
+
+			}
+
+			&.one--forty{
+
+				width: 40%;
+
+			}
+
+			&.one--sixty{
+
+				width: 60%;
+
+			}
+
+			&.one--fortyfive{
+
+				width: 45%;
+
+				@media #{$break-tablets, $break-smartphones, $break-phones}{
+
+					width: 100%;
+
+				}
+
+			}
+
+			&.one--fiftyfive{
+
+				width: 55%;
+
+				@media #{$break-tablets, $break-smartphones, $break-phones}{
+
+					width: 100%;
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// START GRID STYLE
+.clearfix{
+
+	overflow: auto;
+
+	&::after {
+
+		content: "";
+
+		clear: both;
+
+		display: table;
+
+	}
+
+}
+
+
+.border--bottom{
+
+	border-bottom: 1px solid $border_gray;
+
+}

@@ -1,0 +1,76 @@
+.facts{
+
+  width: 100%;
+
+  max-width: 930px;
+
+  margin: 0 auto;
+
+  @media #{$break-desktop, $break-tablets, $break-smartphones, $break-phones}{
+
+    padding: 0 25px;
+
+  }
+
+  p{
+
+    @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+      text-align: center;
+
+    }
+
+  }
+
+  .graphic{
+
+    position: relative;
+
+    @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+      margin: 25px 0 0 0;
+
+    }
+
+    &__balloo{
+
+      width: 86px;
+
+      position: absolute;
+
+      @media #{$break-tablets}{
+
+        width: 120px;
+
+      }
+
+      @media #{$break-smartphones, $break-phones}{
+
+        width: 65px;
+
+      }
+
+      &.baloon--1st{
+
+        left: 14px;
+
+        top: 1px;
+
+
+      }
+
+      &.baloon--2nd{
+
+        position: absolute;
+
+        right: 18px;
+
+        top: 7px;
+
+      }
+
+    }
+
+  }
+
+}

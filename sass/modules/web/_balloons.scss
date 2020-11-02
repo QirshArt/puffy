@@ -1,0 +1,44 @@
+
+
+.baloon--1st{
+
+  -webkit-animation:balloon1 6s ease-in-out infinite;
+
+  -moz-animation:balloon1 6s ease-in-out infinite;
+
+  -o-animation:balloon1 6s ease-in-out infinite;
+
+  animation:balloon1 6s ease-in-out infinite;
+
+}
+
+.baloon--2nd{
+
+  -webkit-animation:balloon2 6s ease-in-out infinite;
+
+  -moz-animation:balloon2 6s ease-in-out infinite;
+
+  -o-animation:balloon2 6s ease-in-out infinite;
+
+  animation:balloon2 6s ease-in-out infinite;
+
+}
+
+
+
+
+@-webkit-keyframes balloon1 {
+
+  0%,100%{-webkit-transform:translateY(-7px) translateX(0) rotate(-8deg);}
+
+  50%{ -webkit-transform:translateY(7px) translateX(0) rotate(10deg); }
+
+}
+
+@-webkit-keyframes balloon2 {
+
+  0%,100%{-webkit-transform:translateY(5px) translateX(0) rotate(8deg);}
+
+  50%{ -webkit-transform:translateY(-10px) translateX(0) rotate(-10deg); }
+
+}

@@ -1,0 +1,21 @@
+@mixin pie {
+
+	behavior: url(#{$pollyfillsPath}pie/PIE.htc);
+
+	behavior: url(#{$pollyfillsPath}pie/PIE.php);
+
+}
+
+@mixin pie-background-image($pie-background) {
+
+	-pie-background: $pie-background;
+
+}
+
+@mixin box-sizing {
+
+	behavior: url(#{$pollyfillsPath}box-sizing/boxsizing.htc);
+
+	behavior: url(#{$pollyfillsPath}box-sizing/boxsizing.php);
+	
+}

@@ -1,0 +1,23 @@
+/* largest for Norml desktop devices */
+$break-xlargescreens: "only screen and (min-width : 1441px) and (max-width: 1660px)";
+
+/* LARGEST SCREEN DEVICES */
+$break-largescreens: "only screen and (min-width : 1361px) and (max-width: 1440px)";
+
+/* WIDER SCREEN DEVICES */
+$break-widerscreens: "only screen and (min-width : 1281px) and (max-width: 1360px)";
+
+/* WIDE SCREEN DEVICES */
+$break-widescreens: "all and (min-width: 1025px) and (max-width: 1280px)";
+
+/* TABLETS AND SMALL DESKTOP DEVICES */
+$break-desktop: "all and (min-width: 961px) and (max-width: 1024px)";
+
+/* ALL TABLET DEVICES */
+$break-tablets: "all and (min-width: 768px) and (max-width: 960px)";
+
+/* ALL EXTRA LARGE MOBILE DEVICES */
+$break-smartphones: "all and (min-width: 481px) and (max-width: 767px)";
+
+/* ALL MOBILE DEVICES */
+$break-phones: "all and (max-width: 480px)";

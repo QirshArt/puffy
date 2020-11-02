@@ -1,0 +1,66 @@
+.btn{
+
+  display: inline-block;
+
+  padding: 15px 70px;
+
+  border-width: 3px;
+
+  border-style: solid;
+
+  font-size: 16px;
+
+  text-transform: uppercase;
+
+  text-align: center;
+
+  line-height: 16px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  @include transition(all .7s ease);
+
+  &--sm{
+
+    padding: 7px 40px;
+
+    font-size: 14px;
+
+    @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+      font-size: 12px;
+
+    }
+
+  }
+
+  &--rounded{
+
+    -webkit-border-radius: 300px;
+
+    border-radius: 300px;
+
+  }
+
+  &--success{
+
+    background: $success_brand;
+
+    border-color: lighten($success_brand, 5%);
+
+    color: $white;
+
+    &:hover, &:active, &:focus{
+
+      background: darken($success_brand, 5%);
+
+      border-color: darken($success_brand, 5%);
+
+    }
+
+  }
+
+
+}

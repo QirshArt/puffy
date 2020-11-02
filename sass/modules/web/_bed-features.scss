@@ -1,0 +1,822 @@
+.features{
+
+  padding: 0 35px;
+
+  position: relative;
+
+  @media #{$break-smartphones, $break-phones}{
+
+    width: 120%;
+
+    padding: 0;
+
+  }
+
+  &.features--matt{
+
+    @media #{$break-smartphones, $break-phones}{
+
+      margin: 0 0 0 -20%;
+
+    }
+
+  }
+
+  &.features--lux{
+
+    @media #{$break-smartphones, $break-phones}{
+
+      margin: 0 -20% 0 0;
+
+    }
+
+  }
+
+  ul{
+
+    display: block;
+
+    padding: 0 0 50px 0;
+
+    margin: 0;
+
+    li{
+
+      padding: 0;
+
+      list-style: none;
+
+      position: relative;
+
+      &:nth-child(1){
+
+        z-index: 4;
+
+        .featursbox{
+
+          bottom: 25px;
+
+          @media #{$break-tablets}{
+
+            bottom: 26px;
+
+          }
+
+          @media #{$break-smartphones, $break-phones}{
+
+            bottom: 20px;
+
+          }
+
+        }
+
+      }
+
+      &:nth-child(2){
+
+        margin: -90px 0 0 0;
+
+        z-index: 3;
+
+        @media #{$break-tablets}{
+
+          margin: -70px 0 0 0;
+
+        }
+
+        @media #{$break-smartphones, $break-phones}{
+
+          margin: -35px 0 0 0;
+
+        }
+
+        .featursbox{
+
+          bottom: 25px;
+
+          @media #{$break-tablets}{
+
+            bottom: 20px;
+
+          }
+
+          @media #{$break-smartphones, $break-phones}{
+
+            bottom: 20px;
+
+          }
+
+        }
+
+      }
+
+      &:nth-child(3){
+
+        margin: -80px 0 0 0;
+
+        z-index: 2;
+
+        @media #{$break-tablets}{
+
+          margin: -60px 0 0 0;
+
+        }
+
+        @media #{$break-smartphones, $break-phones}{
+
+          margin: -30px 0 0 0;
+
+        }
+
+        .featursbox{
+
+          bottom: 21px;
+
+          @media #{$break-tablets}{
+
+            bottom: 16px;
+
+          }
+
+          @media #{$break-smartphones, $break-phones}{
+
+            bottom: 16px;
+
+          }
+
+        }
+
+      }
+
+      &:nth-child(4){
+
+        margin: -100px 0 0 0;
+
+        z-index: 1;
+
+        @media #{$break-tablets}{
+
+          margin: -80px 0 0 0;
+
+        }
+
+        @media #{$break-smartphones, $break-phones}{
+
+          margin: -40px 0 0 0;
+
+        }
+
+        .featursbox{
+
+          bottom: 13px;
+
+          @media #{$break-tablets}{
+
+            bottom: 8px;
+
+          }
+
+          @media #{$break-smartphones, $break-phones}{
+
+            bottom: 8px;
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &.features--matt{
+
+    ul{
+
+      margin-top: 97px;
+
+      @media #{$break-tablets}{
+
+        margin-top: 56px;
+
+      }
+
+      @media #{$break-smartphones, $break-phones}{
+
+        margin-top: 75px;
+
+      }
+
+      li{
+
+        &:nth-child(1){
+
+          margin: -20px 0 0 0;
+
+          @media #{$break-tablets}{
+
+            margin: 0 0 0 0;
+
+          }
+
+          @media #{$break-smartphones, $break-phones}{
+
+            margin: 0 0 0 0;
+
+          }
+
+        }
+
+        &:nth-child(2){
+
+          margin: -80px 0 0 0;
+
+          @media #{$break-tablets}{
+
+            margin: -60px 0 0 0;
+
+          }
+
+          @media #{$break-smartphones, $break-phones}{
+
+            margin: -25px 0 0 0;
+
+          }
+
+          .featursbox{
+
+            bottom: 21px;
+
+            @media #{$break-tablets}{
+
+              bottom: 16px;
+
+            }
+
+            @media #{$break-smartphones, $break-phones}{
+
+              bottom: 16px;
+
+            }
+
+          }
+
+        }
+
+        &:nth-child(3){
+
+          margin: -99px 0 0 0;
+
+          @media #{$break-tablets}{
+
+            margin: -79px 0 0 0;
+
+          }
+
+          @media #{$break-smartphones, $break-phones}{
+
+            //margin: -79px 0 0 0;
+
+            margin: -32px 0 0 0;
+
+          }
+
+          .featursbox{
+
+            bottom: 13px;
+
+            @media #{$break-smartphones, $break-phones}{
+
+              bottom: 8px;
+
+            }
+
+            @media #{$break-tablets}{
+
+              bottom: 8px;
+
+            }
+
+          }
+
+        }
+
+        .featursbox{
+
+          a{
+
+            span{
+
+              display: block;
+
+              float: left;
+
+              @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+                float: right;
+
+              }
+
+              &.icon{
+
+                @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+                  margin: 3px 0 0 10px;
+
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+// START FEATURE BOX
+.featursbox{
+
+  width: 100%;
+
+  position: absolute;
+
+  bottom: 25px;
+
+  left: 0;
+
+  &__link{
+
+    display: table;
+
+    padding: 4px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    &.open{
+
+      .icon{
+
+        .plus{
+
+          &:after {
+
+            -webkit-transform: rotate(-180deg);
+
+            transform: rotate(-180deg);
+
+          }
+
+        }
+
+      }
+
+    }
+
+    span{
+
+      display: block;
+
+      float: left;
+
+    }
+
+    .icon{
+
+      width: 17px;
+
+      height: 17px;
+
+      margin: 3px 10px 0 0;
+
+      background: rgba($white, 0.9);
+
+      -webkit-border-radius: 10px;
+
+      border-radius: 10px;
+
+      position: relative;
+
+      .plus{
+
+        width: 9px;
+
+        height: 1px;
+
+        background: $primary_brand;
+
+        position: absolute;
+
+        left: 4px;
+
+        top: 8px;
+
+        &:after{
+
+          content: "";
+
+          display: block;
+
+          width: 9px;
+
+          height: 1px;
+
+          background: $primary_brand;
+
+          position: absolute;
+
+          left: 0;
+
+          top: 0;
+
+          -webkit-transform: rotate(90deg);
+
+          transform: rotate(90deg);
+
+          transition: all .5s ease;
+
+        }
+
+      }
+
+      &:before, &:after{
+
+        content: "";
+
+        display: block;
+
+        -webkit-border-radius: 20px;
+
+        border-radius: 20px;
+
+        border: 1px solid rgba($white, 0.9);
+
+        position: absolute;
+
+      }
+
+      &:before{
+
+        width: 19px;
+
+        height: 19px;
+
+        left: -2px;
+
+        top: -2px;
+
+      }
+
+      &:after{
+
+        display: block;
+
+        width: 23px;
+
+        height: 23px;
+
+        left: -4px;
+
+        top: -4px;
+
+      }
+
+      .plus{
+
+
+
+      }
+
+    }
+
+    .txt{
+
+      min-width: 145px;
+
+      padding: 2px 7px;
+
+      background: rgba($white, .8);
+
+      font-size: 13px;
+
+      font-weight: 600;
+
+      color: $primary_brand;
+
+      -webkit-border-radius: 4px;
+
+      border-radius: 4px;
+
+      @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+        min-width: 120px;
+
+        font-size: 10px;
+
+      }
+
+      sup{
+
+        font-size: 7px;
+
+      }
+
+    }
+
+  }
+
+}
+
+// START FEATURES MODAL
+.featuresbox__modal{
+
+  display: none;
+
+  width: 220px;
+
+  background: rgba($white, .9);
+
+  -webkit-border-radius: 4px;
+
+  border-radius: 4px;
+
+  box-shadow: 5px 5px 25px rgba(0,0,0,0.2);
+
+  position: absolute;
+
+  left: 180px;
+
+  top: 100px;
+
+  z-index: 100;
+
+  @media #{$break-tablets}{
+
+    left: 140px;
+
+    top: 77px;
+
+  }
+
+  @media #{$break-smartphones, $break-phones}{
+
+    left: 45px;
+
+    top: 46px;
+
+  }
+
+  &.featuresbox__modal--middle{
+
+    top: 50%;
+
+    -webkit-transform: translateY(-50%);
+
+    transform: translateY(-50%);
+
+  }
+
+  &.featuresbox__modal--bottom{
+
+    top: inherit;
+
+    bottom: 10px;
+
+  }
+
+  .sub_title{
+
+    padding: 2px 15px;
+
+    background: $primary_brand;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    color: $white;
+
+    -webkit-border-radius: 4px 4px 0 0;
+
+    border-radius: 4px 4px 0 0;
+
+  }
+
+  .content{
+
+    padding: 7px 20px;
+
+    .title{
+
+      font-size: 14px;
+
+      font-weight: 600;
+
+      color: $primary_brand;
+
+    }
+
+    p{
+
+      font-size: 12px;
+
+    }
+
+  }
+
+}
+
+// START PRICE BOX
+.pricebox{
+
+  width: 100%;
+
+  max-width: 230px;
+
+  margin: 0 auto;
+
+  @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+    display: table;
+
+    width: auto;
+
+  }
+
+  &__half {
+
+    display: inline-block;
+
+    width: 49%;
+
+    vertical-align: top;
+
+    position: relative;
+
+    @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+      width: 100%;
+
+    }
+
+  }
+
+  &__separator{
+
+    width: 16px;
+
+    height: 100%;
+
+    position: absolute;
+
+    left: -12px;
+
+    top: 2px;
+
+    z-index: 1;
+
+    @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+      display: none;
+
+    }
+
+    &:before{
+
+      content: "";
+
+      display: block;
+
+      width: 0;
+
+      height: 100%;
+
+      border-left: 1px solid lighten($black, 50%);
+
+      position: absolute;
+
+      left: 5px;
+
+      top: 0;
+
+    }
+
+    span{
+
+      display: block;
+
+      padding: 5px 0;
+
+      margin: 18px 0 0 -2px;
+
+      background: #fff;
+
+      position: relative;
+
+    }
+
+  }
+
+  &__start {
+
+    font-size: 12px;
+
+    @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+      font-size: 10px;
+
+    }
+
+    strong {
+
+      font-size: 15px;
+
+      font-weight: 700;
+
+      @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+        font-size: 12px;
+
+      }
+
+    }
+
+    &.mobile--separator{
+
+      position: relative;
+
+      &:before{
+
+        content: "";
+
+        display: none;
+
+        width: 100%;
+
+        height: 1;
+
+        border-top: 1px solid lighten($black, 50%);
+
+        position: absolute;
+
+        left: 0;
+
+        top: 14px;
+
+        @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+          display: block;
+
+        }
+
+      }
+
+      span{
+
+        @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+          display: inline-block;
+
+          padding: 5px 15px;
+
+          background: #fff;
+
+          position: relative;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &__price {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: $danger_brand;
+
+    @media #{$break-tablets, $break-smartphones, $break-phones}{
+
+      font-size: 14px;
+
+    }
+
+  }
+
+}
